@@ -7,7 +7,7 @@ ListModel {
     id: content
 
     ListElement {
-        label:"plugin template name:"
+        label:"Plugin template name:"
         placeholder: "Must be of the form: plugin_template "
         ptype: 0
         //combo_options: ''

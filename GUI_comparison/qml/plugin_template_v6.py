@@ -21,8 +21,8 @@ if __name__ == '__main__':
 
     def on_create_template(plugin_info):
         final = plugin_info.toVariant()
-        #print final
-        modname = final["Plugin template name:"]
+        print (final)
+        modname = final['Plugin template name:']
         modname = modname if len(modname.split('.py')) > 1 else modname + '.py'  
         
         
@@ -48,7 +48,7 @@ if __name__ == '__main__':
              f.write("\n\n    def get_max_frames(self):\n       return 'multiple'")
 
         f.close    
-        print 'done, go to :  '+ os.path.dirname(os.path.realpath(__file__)) + '/' + modname
+        print( 'done, go to :  ' + modname + os.path.dirname(os.path.realpath(__file__)) + '/' + modname)
              
     QGuiApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     myApp = QApplication(sys.argv)

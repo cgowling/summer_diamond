@@ -31,7 +31,7 @@ ApplicationWindow {
                   
                   StandardTextField {
                       id: textfield
-                      onTextChanged: GModel.pluginInfo[label] = textinput.text
+                      onTextChanged: GModel.pluginInfo[label] = textfield.text
                   }
                   
                   StandardComboBox { 
